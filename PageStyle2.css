@@ -1,0 +1,92 @@
+body {
+    background-image: url('Images/Background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Style the header with a grey background and some padding */
+.header {
+    overflow: hidden;
+    background-color: antiquewhite;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 30px 0px;
+}
+
+/* Style the header links */
+.header a {
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 30px;
+    border-radius: 4px;
+}
+
+/* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
+.header a.title {
+    font-size: 45px;
+    font-weight: bold;
+}
+
+/* Change the background color on mouse-over */
+.header a.header-right:hover {
+    background-color: rgb(221, 221, 221);
+    color: black;
+}
+
+/* Style the active/current link*/
+.header a.active {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    margin: 0px 10px;
+    border-radius: 5px;
+}
+
+/* Float the link section to the right */
+.header-right {
+    float: right;
+}
+
+.table {
+    position: relative; /* Stay in place */
+    overflow: hidden; /* Enable scroll if needed */
+    background-color: rgba(204, 204, 204, 0.5);
+    border-radius: 10px;
+    place-items: center;
+    margin: 0% auto;
+}
+
+table {
+    margin: 1%;
+    width: 98%;
+    font-size:large;
+    text-align: center;
+}
+
+td, th {
+    padding: 9px 0px;
+    border-radius: 5px;
+    height: 50px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    background-color: rgba(250, 235, 215, 0.5);
+}
+
+img {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+/* Set a style for all buttons */
+button {
+    color: black;
+    font-size: 18px;
+    border: none;
+    padding: 20px 30px;
+    cursor: pointer;
+    background-color: rgba(188, 143, 143, 0.5);
+    border-radius: 5px;
+}

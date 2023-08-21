@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>VOTER Login page</title>
+        <link rel="icon" type="image/x-icon" href="Images/Voter.png">
+        <link rel="stylesheet" href="PageStyle.css">
+    </head>
+
+    <body>
+        <h1>E-Voting</h1>
+        <div style="display: block;">
+            <div class="slideshow">
+                <div class="Images">
+                    <img src="Images/National_Vday.jpg" class="center">
+                </div>
+                <div class="Images">
+                    <img src="Images/Parliament.jpg" class="center">
+                </div>
+                <div class="Images">
+                    <img src="Images/Democratic.jpg" class="center">
+                </div>
+                <br>
+            </div>
+            <div class="Login">
+                <form action="Login.php" method="post">
+                    <label for="voter_ID"><b>Voter ID:</b></label><br>
+                    <input type="text" placeholder="Enter your Voter ID" name="voter_ID" required><br><br>
+                    <label for="password"><b>Password:</b></label><br>
+                    <input type="password" placeholder="Enter your password" name="password" required><br><br>
+                    <a href="Login.php"><button style="width: 100%;"><b>Voter Login</b></button><br></a>
+                    <hr><h3 style="text-align: center;">(OR)</h3><hr>
+                    <a>
+                        <button onclick="document.getElementById('id01').style.display='block'"><b>Voter Registration</b></button>
+                    </a>
+                </form>
+            </div>
+        </div>
+        <div id="id01" class="modal">
+            <form class="modal-content" action="Vot_reg.php" method="post">
+                <div class="container">
+                    <label style="font-size: 25px;"><b>Voter Registration</b></label><br>
+                    <label>Please fill this form to register as an voter</label><hr>
+                    <label for="fname"><b>Full name*</b></label>
+                    <input type="text" placeholder="Enter your name" name="fname" required>
+                    <label for="age"><b>Age*</b></label>
+                    <input type="text" placeholder="Enter your age" name="age" required>
+                    <label for="addr"><b>House address*</b></label>
+                    <input type="text" placeholder="Enter address" name="addr" required>
+                    <label for="dis"><b>District*</b></label><br>
+                    <select name="dis" id="location" required>
+                        <option value="KR Puram, Bangalore" selected>KR Puram, Bangalore</option>
+                        <option value="Indiranagar, Bangalore">Indiranagar, Bangalore</option>
+                        <option value="Chamrajpet, Bangalore">Chamrajpet, Bangalore</option>
+                    </select><br>
+                    <label for="phno"><b>Phone number*</b></label>
+                    <input type="text" placeholder="Enter Phone number" name="phno" required>
+                    <label for="V_ID"><b>Voter ID*</b></label>
+                    <input type="text" placeholder="Enter Voter ID" name="V_ID" required>
+                    <label for="psw"><b>Password*</b></label>
+                    <input type="password" placeholder="Enter Password" name="psw" required>
+                    <label for="psw-repeat"><b>Repeat Password*</b></label>
+                    <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+                    <label>
+                        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px">Remember me
+                    </label><br>
+                    <div class="clearfix">
+                        <button type="submit" class="signupbtn">Sign Up</button><br>
+                        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn" style="width: 100%;">Cancel</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <script>
+            let slideIndex = 0;
+            showSlides();
+            function showSlides() {
+                let i;
+                let slides = document.getElementsByClassName("Images");
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                slideIndex++;
+                if (slideIndex > slides.length) {slideIndex = 1}
+                slides[slideIndex-1].style.display = "block";
+                setTimeout(showSlides, 5000);
+            }
+        </script>
+    </body>
+</html>

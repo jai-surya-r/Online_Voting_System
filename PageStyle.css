@@ -1,0 +1,112 @@
+body {
+    background-image: url('Images/Background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.slideshow {
+    max-width: 1000px;
+    position: absolute;
+    margin: auto;
+}
+
+form {
+    border: 3px solid #ffecec;
+}
+
+input[type=text], input[type=password], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.Login {
+    background-color: #f1f1f1;
+    width: 30%;
+    padding: 20px;
+    float: right;
+    border-radius: 2%;
+}
+
+.Images {
+    display: grid;
+}
+
+button {
+    background-color: #04AA6D;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+.remember {
+    float: right;
+}
+
+span.password {
+    float: right;
+    padding-top: 16px;
+}
+
+.cancelbtn {
+    width: 20%;
+    padding: 14px 20px;
+    margin: 8px 0;
+    background-color: #f44336;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    align-items: center;
+}
+
+.center {
+    display: grid;
+    width: 1000px;
+    height: 500px;
+}
+
+h1 {
+    font-size: 300%;
+    text-align: center;
+    background-color: antiquewhite;
+    border-radius: 5px;
+    padding: 15px;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0, 0, 0, 0.5); /* Fallback color */
+    padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    width: 40%;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.btn {
+    background-color:rgba(255, 255, 255, 0.3); 
+    border-radius: 10px; 
+    color: black; 
+    width: 200px;
+}
